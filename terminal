@@ -1,0 +1,4 @@
+npx create-next-app resume-website
+cd resume-website
+npm install tailwindcss postcss autoprefixer
+npx tailwindcss init -p 
