@@ -18,9 +18,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center">
       <Head>
-        <title>Your Name - Professional Resume</title>
+        <title>George Zyryanov - Resume</title>
         <meta name="description" content="Professional resume and portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="https://my-person-images.s3.eu-north-1.amazonaws.com/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
       </Head>
@@ -301,7 +306,7 @@ export default function Home() {
                       
                       <div className="mb-4">
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                          <span className="mr-2">🚀</span> AQA & CI/CD
+                          <span className="mr-2">🤖</span> AQA & CI/CD
                         </h5>
                         <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
                           <li>Developed, maintained and executed 500+ automated tests that ran in parallel using GitHub runners.</li>
@@ -469,10 +474,12 @@ export default function Home() {
                       
                       <div className="mb-4">
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                          <span className="mr-2">🚀</span> AQA
+                          <span className="mr-2">🤖</span> AQA
                         </h5>
                         <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Example.</li>
+                          <li>Implemented and used a custom version of WDIO test automation framework</li>
+                          <li>Used Gitlab for Ci/Cd automation.</li>
+                          <li>Developed and Maintained Automated Tests.</li>
                         </ul>
                       </div>
                       
@@ -481,6 +488,8 @@ export default function Home() {
                           <span className="mr-2">🔍</span> QA
                         </h5>
                         <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Developed and Maintained Test Cases and Test Suites.</li>
+                          <li>Developed Test Plan</li>
                           <li>Example.</li>
                         </ul>
                       </div>
@@ -490,16 +499,8 @@ export default function Home() {
                           <span className="mr-2">👨‍🏫</span> Product Quality Advocate
                         </h5>
                         <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Example.</li>
-                        </ul>
-                      </div>
-                      
-                      <div className="mb-4">
-                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                          <span className="mr-2">👥</span> Team Leadership
-                        </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Example.</li>
+                          <li>Participated and pitched ideas on Quality Advocates Meeting.</li>
+                          <li>Presented a new testing tool to the memembers of QA department.</li>
                         </ul>
                       </div>
                       
@@ -508,7 +509,9 @@ export default function Home() {
                           <span className="mr-2">🗣️</span> Communication
                         </h5>
                         <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Example.</li>
+                          <li>Worked as a part of cross-functional SCRUM team [2 BE, 2 FE, 1 AQA/QA, BA, Product Manager].</li>
+                          <li>Actively participated in SCRUM rituals.</li>
+                          <li>Gathered information and intelligence across various departments.</li>
                         </ul>
                       </div>
                       
@@ -517,7 +520,7 @@ export default function Home() {
                           <span className="mr-2">📝</span> Documentation
                         </h5>
                         <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Example.</li>
+                          <li>Wrote testing documentation including "How To" guides.</li>
                         </ul>
                       </div>
                     </div>
@@ -584,37 +587,31 @@ export default function Home() {
                       
                       <div className="mb-4">
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                          <span className="mr-2">🚀</span> AQA
+                          <span className="mr-2">🤖</span> Automation
                         </h5>
                         <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Example.</li>
+                          <li>Automated business processes using latest WorkFusion RPA tech.</li>
                         </ul>
                       </div>
                       
                       <div className="mb-4">
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                          <span className="mr-2">🔍</span> QA
+                          <span className="mr-2">🔍</span> Business Intelligence and Project Management
                         </h5>
                         <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Example.</li>
+                          <li>Worked as a BA on one of the major banking projects. Worked closely with stakeholders to understand business needs, created tasks for developers.</li>
+                          <li>Because of great communication skills - chosen out of 10 engineers to go on a business trip to Singapore.</li>
+                          <li>Created / Updated tasks in Jira.</li>
                         </ul>
                       </div>
                       
                       <div className="mb-4">
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                          <span className="mr-2">👨‍🏫</span> Product Quality Advocate
+                          <span className="mr-2">👨‍🏫</span> Training for customers
                         </h5>
                         <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Example.</li>
-                        </ul>
-                      </div>
-                      
-                      <div className="mb-4">
-                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                          <span className="mr-2">👥</span> Team Leadership
-                        </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Example.</li>
+                          <li>Designed and hosted educational sessions for bank workers on how to use the RPA system.</li>
+                          <li>Created PowerPoint presentations with "How To" to reduce complications.</li>
                         </ul>
                       </div>
                       
@@ -623,16 +620,8 @@ export default function Home() {
                           <span className="mr-2">🗣️</span> Communication
                         </h5>
                         <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Example.</li>
-                        </ul>
-                      </div>
-                      
-                      <div>
-                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
-                          <span className="mr-2">📝</span> Documentation
-                        </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Example.</li>
+                          <li>Actively participated in SCRUM rituals.</li>
+                          <li>Gathered information and intelligence across various departments.</li>
                         </ul>
                       </div>
                     </div>
