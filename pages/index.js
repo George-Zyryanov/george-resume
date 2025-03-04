@@ -172,7 +172,7 @@ export default function Home() {
                     onClick={() => setShowOrcaTech(!showOrcaTech)}
                     className="flex items-center text-sm font-medium text-accent hover:text-accent-dark focus:outline-none transition-colors"
                   >
-                    <span>More details about Tools and Technology Used</span>
+                    <span>Accomplishments and Technologies Used</span>
                     {showOrcaTech ? <FaChevronUp className="ml-2" /> : <FaChevronDown className="ml-2" />}
                   </button>
                 </div>
@@ -295,6 +295,90 @@ export default function Home() {
                         </span>
                       </div>
                     </div>
+                    
+                    <div className="mt-6 border-t border-gray-200 pt-5">
+                      <h4 className="text-base font-semibold text-primary mb-4">Accomplishments and Achievements</h4>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">🚀</span> AQA & CI/CD
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Developed, maintained and executed 500+ automated tests that ran in parallel using GitHub runners.</li>
+                          <li>Made tests run on 5 machines with 2 threads each, enabling 10 parallel tests and increasing execution speed 10x times.</li>
+                          <li>Configured all tests to run using Docker containers.</li>
+                          <li>Implemented automated test triggers for every PR with informational windows showing test status and descriptive error logging.</li>
+                          <li>Added Slack notifications for failed tests.</li>
+                          <li>Added site speed monitoring with defined threshold metrics for critical pages.</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">🔍</span> QA
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Developed and maintained Test Plans and Test Cases.</li>
+                          <li>Worked on testing different products in parallel with constantly changing priorities.</li>
+                          <li>Manually tested various software types: API, onboardings, FE, integration testing, BE.</li>
+                          <li>Created testing scenarios using Linux instances to upload files and malware for scan verification.</li>
+                          <li>Developed a checklist for testing new environments before production use.</li>
+                          <li>Participated in testing GOV environments with high standards and different approaches.</li>
+                          <li>Provided UI design feedback and pitched improved ideas to product owners.</li>
+                          <li>Developed a testing strategy that helped increase delivery times by 25% without affecting quality.</li>
+                          <li>Implemented a system where each front-end team had a dedicated QA who documented their expertise.</li>
+                          <li>Created detailed Test Plans and Test Cases for Frontend and APIs.</li>
+                          <li>Used various bug hunting techniques including exploratory testing, API testing, boundary testing, browser testing, automation for pixel-level testing, form validation, authorization bypass testing, cookie manipulation, DB stress testing, log analysis, and network traffic analysis.</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">👨‍🏫</span> Product Quality Advocate
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Planned, developed, scheduled and hosted "Quality Assurance How To" meetings.</li>
+                          <li>Held open mic sessions for developers to share ideas on improving approaches.</li>
+                          <li>Developed QA/AQA responsibilities documents.</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">👥</span> Team Leadership
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Created a skill assessment process to identify QA engineers best suited for roles.</li>
+                          <li>Developed mock situations to train QAs in managing workloads and maintaining quality standards.</li>
+                          <li>Mentored manual QA engineers in test automation, building their skills for independent work.</li>
+                          <li>Continuously planned quarterly work for 3 manual QA engineers and 2 test automation engineers.</li>
+                          <li>Implemented continuous process improvements, analyzing bug patterns to create faster response processes.</li>
+                          <li>Collaborated with various teams on every major feature development.</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">🗣️</span> Communication
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Developed strong relationships with DevOps team, ensuring support for initiatives.</li>
+                          <li>Built trust with 3 Frontend development teams who valued input on quality issues.</li>
+                          <li>Established effective communication with C-level management, gaining approval for requests.</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">📝</span> Documentation
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Created and documented 1000+ test cases in qase.io.</li>
+                          <li>Developed QA/AQA responsibilities documents.</li>
+                          <li>Maintained "how-to" documentation for new features to ensure continuity of work.</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 )}
               </div>
@@ -325,7 +409,7 @@ export default function Home() {
                   onClick={() => setShowRSTech(!showRSTech)}
                   className="flex items-center text-sm font-medium text-accent hover:text-accent-dark focus:outline-none transition-colors"
                 >
-                  <span>More details about Tools and Technology Used</span>
+                  <span>Accomplishments and Technologies Used</span>
                   {showRSTech ? <FaChevronUp className="ml-2" /> : <FaChevronDown className="ml-2" />}
                 </button>
               </div>
@@ -356,7 +440,7 @@ export default function Home() {
                     </div>
                   </div>
                   
-                  <div className="mb-3">
+                  <div className="mb-5">
                     <h4 className="text-sm font-semibold text-gray-700 mb-2">DevOps & Collaboration</h4>
                     <div className="flex flex-wrap gap-2">
                       <span className="inline-flex items-center px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs">
@@ -379,6 +463,64 @@ export default function Home() {
                       </span>
                     </div>
                   </div>
+                  
+                  <div className="mt-6 border-t border-gray-200 pt-5">
+                      <h4 className="text-base font-semibold text-primary mb-4">Accomplishments and Achievements</h4>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">🚀</span> AQA
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Example.</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">🔍</span> QA
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Example.</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">👨‍🏫</span> Product Quality Advocate
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Example.</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">👥</span> Team Leadership
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Example.</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">🗣️</span> Communication
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Example.</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">📝</span> Documentation
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Example.</li>
+                        </ul>
+                      </div>
+                    </div>
                 </div>
               )}
             </div>
@@ -409,14 +551,14 @@ export default function Home() {
                   onClick={() => setShowWorkfusionTech(!showWorkfusionTech)}
                   className="flex items-center text-sm font-medium text-accent hover:text-accent-dark focus:outline-none transition-colors"
                 >
-                  <span>More details about Tools and Technology Used</span>
+                  <span>Accomplishments and Technologies Used</span>
                   {showWorkfusionTech ? <FaChevronUp className="ml-2" /> : <FaChevronDown className="ml-2" />}
                 </button>
               </div>
               
               {showWorkfusionTech && (
                 <div className="mt-3 p-4 bg-gray-50 rounded-md border border-gray-200 animate-fadeIn">
-                  <div className="mb-3">
+                  <div className="mb-5">
                     <h4 className="text-sm font-semibold text-gray-700 mb-2">Technologies & Tools</h4>
                     <div className="flex flex-wrap gap-2">
                       <span className="inline-flex items-center px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-xs">
@@ -436,6 +578,64 @@ export default function Home() {
                       </span>
                     </div>
                   </div>
+                  
+                  <div className="mt-6 border-t border-gray-200 pt-5">
+                      <h4 className="text-base font-semibold text-primary mb-4">Accomplishments and Achievements</h4>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">🚀</span> AQA
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Example.</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">🔍</span> QA
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Example.</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">👨‍🏫</span> Product Quality Advocate
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Example.</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">👥</span> Team Leadership
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Example.</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">🗣️</span> Communication
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Example.</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                          <span className="mr-2">📝</span> Documentation
+                        </h5>
+                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
+                          <li>Example.</li>
+                        </ul>
+                      </div>
+                    </div>
                 </div>
               )}
             </div>
@@ -465,7 +665,7 @@ export default function Home() {
                   onClick={() => setShowBooksCEOTech(!showBooksCEOTech)}
                   className="flex items-center text-sm font-medium text-accent hover:text-accent-dark focus:outline-none transition-colors"
                 >
-                  <span>More details about Tools and Technology Used</span>
+                  <span>Accomplishments and Technologies Used</span>
                   {showBooksCEOTech ? <FaChevronUp className="ml-2" /> : <FaChevronDown className="ml-2" />}
                 </button>
               </div>
