@@ -1,4 +1,4 @@
 npx create-next-app resume-website
 cd resume-website
-npm install tailwindcss postcss autoprefixer
+npm install tailwindcss postcss autoprefixer react-icons
 npx tailwindcss init -p 
