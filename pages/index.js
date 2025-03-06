@@ -772,7 +772,7 @@ export default function Home() {
               <ul className="list-disc list-outside text-gray-700 space-y-2 ml-8 mt-3">
                 <li className="pl-1">3rd place in project pitch competition in English. Showcased analysis, research, and communication.</li>
                 <li className="pl-1">Analyzed, gathered information and pitched to CEO of Geely Belarus a market fit solution.</li>
-                <li className="pl-1">Competed in Google competition. Found client, built site, used AdWords. Ranked top 100 of 5000.</li>
+                <li className="pl-1">Participated in Google competition. Found client, built site, used AdWords. Ranked top 100 of 5000.</li>
               </ul>
             </div>
           </div>
