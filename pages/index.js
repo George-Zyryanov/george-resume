@@ -117,9 +117,10 @@ export default function Home() {
         <section id="summary" className="mb-10 md:mb-16 scroll-mt-20">
           <h2 className="text-xl md:text-2xl font-bold text-primary mb-4 md:mb-6 pb-2 border-b border-gray-200">Executive Summary</h2>
           <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-            Engineering Manager with 6 years of experience in QA and Automated QA, specializing in building and leading high-performing teams.
-            Proven track record in improving development processes, reducing time-to-market, and maintaining high quality standards.
-            Experienced in mentoring team members and fostering collaborative work environments in international settings.
+            I'm a Senior QA/AQA professional with 6 years of experience leading global teams and streamlining development processes through
+            robust manual and automated testing strategies. Achieved a 25% reduction in time-to-market by creating and optimizing over 500 
+            containerized automated tests, integrating CI/CD pipelines, and championing best practices across cross-functional teams. 
+            Leveraging strong communication skills and a collaborative leadership style.
           </p>
         </section>
 
@@ -146,10 +147,10 @@ export default function Home() {
                   </div>
                   <span className="text-sm text-gray-600 mt-2 md:mt-0 md:text-right whitespace-nowrap">Nov 2021 - Nov 2023</span>
                 </div>
-                <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4 mt-3">
-                  <li>Oversaw both AQA and QA teams at a leading cybersecurity company valued at $1.8 billion.</li>
-                  <li>Led 5 full-time engineers across 2 countries to cut time-to-market by 25% without losing quality.</li>
-                  <li>Mentored team members, fostering a collaborative culture.</li>
+                <ul className="list-disc list-outside text-gray-700 space-y-2 ml-8 mt-3">
+                  <li className="pl-1">Spearheaded end-to-end QA and AQA initiatives at a $1.8B cybersecurity firm, creating robust automation frameworks and best-practice standards.</li>
+                  <li className="pl-1">Provided hands-on mentorship in test methodologies, fostering a culture of continuous improvement and collaboration among QA engineers.</li>
+                  <li className="pl-1">Designed and executed comprehensive QA strategies—covering APIs, frontend, backend, and integration testing—that consistently met evolving product demands without sacrificing quality.</li>
                 </ul>
               
               {/* Senior position */}
@@ -165,10 +166,10 @@ export default function Home() {
                   </div>
                   <span className="text-sm text-gray-600 mt-2 md:mt-0 md:text-right whitespace-nowrap">Apr 2020 - Oct 2021</span>
                 </div>
-                <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                  <li>Responsible for designing, implementing, and maintaining automated test frameworks.</li>
-                  <li>Conducted comprehensive manual testing with clear bug description.</li>
-                  <li>Contributed UX/UI improvement ideas to enhance end-user experience.</li>
+                <ul className="list-disc list-outside text-gray-700 space-y-2 ml-8 mt-3">
+                  <li className="pl-1">Built and deployed containerized test suites that reduced time-to-market by 25% without compromising on product quality or reliability.</li>
+                  <li className="pl-1">Engineered and maintained over 500 parallel automated tests using GitHub Actions and Docker, boosting execution speed 10x and integrating Slack alerts for real-time feedback.</li>
+                  <li className="pl-1">Championed best practices through site speed monitoring, advanced bug-hunting techniques, and 1,000+ documented test cases, while hosting "Quality Assurance How To" sessions to foster continuous improvement and knowledge sharing.</li>
                 </ul>
               </div>
             </div>
@@ -308,13 +309,14 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">🤖</span> AQA & CI/CD
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Developed, maintained and executed 500+ automated tests that ran in parallel using GitHub runners.</li>
-                          <li>Made tests run on 5 machines with 2 threads each, enabling 10 parallel tests and increasing execution speed 10x times.</li>
-                          <li>Configured all tests to run using Docker containers.</li>
-                          <li>Implemented automated test triggers for every PR with informational windows showing test status and descriptive error logging.</li>
-                          <li>Added Slack notifications for failed tests.</li>
-                          <li>Added site speed monitoring with defined threshold metrics for critical pages.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Developed, maintained and executed 500+ automated tests that ran in parallel using GitHub runners.</li>
+                          <li className="pl-1">Made tests run on 5 machines with 2 threads each, enabling 10 parallel tests and increasing execution speed 10x times.</li>
+                          <li className="pl-1">Configured all tests to run using Docker containers.</li>
+                          <li className="pl-1">Implemented automated test triggers for every PR with informational windows showing test status and descriptive error logging.</li>
+                          <li className="pl-1">Added Slack notifications for failed tests.</li>
+                          <li className="pl-1">Added site speed monitoring with defined threshold metrics for critical pages.</li>
+                          <li className="pl-1">Impltemented BDD approach for test automation. All tests were written using Gherkin language.</li>
                         </ul>
                       </div>
                       
@@ -322,18 +324,18 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">🔍</span> QA
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Developed and maintained Test Plans and Test Cases.</li>
-                          <li>Worked on testing different products in parallel with constantly changing priorities.</li>
-                          <li>Manually tested various software types: API, onboardings, FE, integration testing, BE.</li>
-                          <li>Created testing scenarios using Linux instances to upload files and malware for scan verification.</li>
-                          <li>Developed a checklist for testing new environments before production use.</li>
-                          <li>Participated in testing GOV environments with high standards and different approaches.</li>
-                          <li>Provided UI design feedback and pitched improved ideas to product owners.</li>
-                          <li>Developed a testing strategy that helped increase delivery times by 25% without affecting quality.</li>
-                          <li>Implemented a system where each front-end team had a dedicated QA who documented their expertise.</li>
-                          <li>Created detailed Test Plans and Test Cases for Frontend and APIs.</li>
-                          <li>Used various bug hunting techniques including exploratory testing, API testing, boundary testing, browser testing, automation for pixel-level testing, form validation, authorization bypass testing, cookie manipulation, DB stress testing, log analysis, and network traffic analysis.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Developed and maintained Test Plans and Test Cases.</li>
+                          <li className="pl-1">Worked on testing different products in parallel with constantly changing priorities.</li>
+                          <li className="pl-1">Manually tested various software types: API, onboardings, FE, integration testing, BE.</li>
+                          <li className="pl-1">Created testing scenarios using Linux instances to upload files and malware for scan verification.</li>
+                          <li className="pl-1">Developed a checklist for testing new environments before production use.</li>
+                          <li className="pl-1">Participated in testing GOV environments with high standards and different approaches.</li>
+                          <li className="pl-1">Provided UI design feedback and pitched improved ideas to product owners.</li>
+                          <li className="pl-1">Developed a testing strategy that helped increase delivery times by 25% without affecting quality.</li>
+                          <li className="pl-1">Implemented a system where each front-end team had a dedicated QA who documented their expertise.</li>
+                          <li className="pl-1">Created detailed Test Plans and Test Cases for Frontend and APIs.</li>
+                          <li className="pl-1">Used various bug hunting techniques including exploratory testing, API testing, boundary testing, browser testing, automation for pixel-level testing, form validation, authorization bypass testing, cookie manipulation, DB stress testing, log analysis, and network traffic analysis.</li>
                         </ul>
                       </div>
                       
@@ -341,10 +343,10 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">👨‍🏫</span> Product Quality Advocate
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Planned, developed, scheduled and hosted "Quality Assurance How To" meetings.</li>
-                          <li>Held open mic sessions for developers to share ideas on improving approaches.</li>
-                          <li>Developed QA/AQA responsibilities documents.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Planned, developed, scheduled and hosted "Quality Assurance How To" meetings.</li>
+                          <li className="pl-1">Held open mic sessions for developers to share ideas on improving approaches.</li>
+                          <li className="pl-1">Developed QA/AQA responsibilities documents.</li>
                         </ul>
                       </div>
                       
@@ -352,13 +354,13 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">👥</span> Team Leadership
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Created a skill assessment process to identify QA engineers best suited for roles.</li>
-                          <li>Developed mock situations to train QAs in managing workloads and maintaining quality standards.</li>
-                          <li>Mentored manual QA engineers in test automation, building their skills for independent work.</li>
-                          <li>Continuously planned quarterly work for 3 manual QA engineers and 2 test automation engineers.</li>
-                          <li>Implemented continuous process improvements, analyzing bug patterns to create faster response processes.</li>
-                          <li>Collaborated with various teams on every major feature development.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Created a skill assessment process to identify QA engineers best suited for roles.</li>
+                          <li className="pl-1">Developed mock situations to train QAs in managing workloads and maintaining quality standards.</li>
+                          <li className="pl-1">Mentored manual QA engineers in test automation, building their skills for independent work.</li>
+                          <li className="pl-1">Continuously planned quarterly work for 3 manual QA engineers and 2 test automation engineers.</li>
+                          <li className="pl-1">Implemented continuous process improvements, analyzing bug patterns to create faster response processes.</li>
+                          <li className="pl-1">Collaborated with various teams on every major feature development.</li>
                         </ul>
                       </div>
                       
@@ -366,10 +368,10 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">🗣️</span> Communication
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Developed strong relationships with DevOps team, ensuring support for initiatives.</li>
-                          <li>Built trust with 3 Frontend development teams who valued input on quality issues.</li>
-                          <li>Established effective communication with C-level management, gaining approval for requests.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Developed strong relationships with DevOps team, ensuring support for initiatives.</li>
+                          <li className="pl-1">Built trust with 3 Frontend development teams who valued input on quality issues.</li>
+                          <li className="pl-1">Established effective communication with C-level management, gaining approval for requests.</li>
                         </ul>
                       </div>
                       
@@ -377,10 +379,10 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">📝</span> Documentation
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Created and documented 1000+ test cases in qase.io.</li>
-                          <li>Developed QA/AQA responsibilities documents.</li>
-                          <li>Maintained "how-to" documentation for new features to ensure continuity of work.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Created and documented 1000+ test cases in qase.io.</li>
+                          <li className="pl-1">Developed QA/AQA responsibilities documents.</li>
+                          <li className="pl-1">Maintained "how-to" documentation for new features to ensure continuity of work.</li>
                         </ul>
                       </div>
                     </div>
@@ -404,10 +406,10 @@ export default function Home() {
                 </div>
                 <span className="text-sm text-gray-600 mt-2 md:mt-0 md:text-right whitespace-nowrap">Jan 2019 - Apr 2020</span>
               </div>
-              <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4 mt-3">
-                <li>Developed automated test scripts for web and microservices.</li>
-                <li>Integrated PACT testing, E2E, and performance tests (both server-side and client-side).</li>
-                <li>Persuaded client to adopt a new UI testing tool, improving testing speed and consistency.</li>
+              <ul className="list-disc list-outside text-gray-700 space-y-2 ml-8 mt-3">
+                <li className="pl-1">Developed automated test scripts for web and microservices.</li>
+                <li className="pl-1">Integrated PACT testing, E2E, and performance tests (both server-side and client-side).</li>
+                <li className="pl-1">Persuaded client to adopt a new UI testing tool, improving testing speed and consistency.</li>
               </ul>
               <div className="mt-4 flex justify-center">
                 <button 
@@ -476,10 +478,10 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">🤖</span> AQA
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Implemented and used a custom version of WDIO test automation framework</li>
-                          <li>Used Gitlab for Ci/Cd automation.</li>
-                          <li>Developed and Maintained Automated Tests.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Implemented and used a custom version of WDIO test automation framework</li>
+                          <li className="pl-1">Used Gitlab for Ci/Cd automation.</li>
+                          <li className="pl-1">Developed and Maintained Automated Tests.</li>
                         </ul>
                       </div>
                       
@@ -487,10 +489,10 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">🔍</span> QA
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Developed and Maintained Test Cases and Test Suites.</li>
-                          <li>Developed Test Plan</li>
-                          <li>Example.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Developed and Maintained Test Cases and Test Suites.</li>
+                          <li className="pl-1">Developed Test Plan</li>
+                          <li className="pl-1">Example.</li>
                         </ul>
                       </div>
                       
@@ -498,9 +500,9 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">👨‍🏫</span> Product Quality Advocate
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Participated and pitched ideas on Quality Advocates Meeting.</li>
-                          <li>Presented a new testing tool to the memembers of QA department.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Participated and pitched ideas on Quality Advocates Meeting.</li>
+                          <li className="pl-1">Presented a new testing tool to the memembers of QA department.</li>
                         </ul>
                       </div>
                       
@@ -508,10 +510,10 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">🗣️</span> Communication
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Worked as a part of cross-functional SCRUM team [2 BE, 2 FE, 1 AQA/QA, BA, Product Manager].</li>
-                          <li>Actively participated in SCRUM rituals.</li>
-                          <li>Gathered information and intelligence across various departments.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Worked as a part of cross-functional SCRUM team [2 BE, 2 FE, 1 AQA/QA, BA, Product Manager].</li>
+                          <li className="pl-1">Actively participated in SCRUM rituals.</li>
+                          <li className="pl-1">Gathered information and intelligence across various departments.</li>
                         </ul>
                       </div>
                       
@@ -519,8 +521,8 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">📝</span> Documentation
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Wrote testing documentation including "How To" guides.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Wrote testing documentation including "How To" guides.</li>
                         </ul>
                       </div>
                     </div>
@@ -544,10 +546,10 @@ export default function Home() {
                 </div>
                 <span className="text-sm text-gray-600 mt-2 md:mt-0 md:text-right whitespace-nowrap">Jan 2018 - Jan 2019</span>
               </div>
-              <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4 mt-3">
-                <li>Served as part of agile Scrum teams for a client focusing on RPA scripts with Selenium.</li>
-                <li>Led a critical month-long project onsite at one of the largest French banks in Singapore.</li>
-                <li>Effectively communicated progress and challenges to stakeholders to foster informed decision-making.</li>
+              <ul className="list-disc list-outside text-gray-700 space-y-2 ml-8 mt-3">
+                <li className="pl-1">Served as part of agile Scrum teams for a client focusing on RPA scripts with Selenium.</li>
+                <li className="pl-1">Led a critical month-long project onsite at one of the largest French banks in Singapore.</li>
+                <li className="pl-1">Effectively communicated progress and challenges to stakeholders to foster informed decision-making.</li>
               </ul>
               <div className="mt-4 flex justify-center">
                 <button 
@@ -589,8 +591,8 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">🤖</span> Automation
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Automated business processes using latest WorkFusion RPA tech.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Automated business processes using latest WorkFusion RPA tech.</li>
                         </ul>
                       </div>
                       
@@ -598,10 +600,10 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">🔍</span> Business Intelligence and Project Management
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Worked as a BA on one of the major banking projects. Worked closely with stakeholders to understand business needs, created tasks for developers.</li>
-                          <li>Because of great communication skills - chosen out of 10 engineers to go on a business trip to Singapore.</li>
-                          <li>Created / Updated tasks in Jira.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Worked as a BA on one of the major banking projects. Worked closely with stakeholders to understand business needs, created tasks for developers.</li>
+                          <li className="pl-1">Because of great communication skills - chosen out of 10 engineers to go on a business trip to Singapore.</li>
+                          <li className="pl-1">Created / Updated tasks in Jira.</li>
                         </ul>
                       </div>
                       
@@ -609,9 +611,9 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">👨‍🏫</span> Training for customers
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Designed and hosted educational sessions for bank workers on how to use the RPA system.</li>
-                          <li>Created PowerPoint presentations with "How To" to reduce complications.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Designed and hosted educational sessions for bank workers on how to use the RPA system.</li>
+                          <li className="pl-1">Created PowerPoint presentations with "How To" to reduce complications.</li>
                         </ul>
                       </div>
                       
@@ -619,9 +621,9 @@ export default function Home() {
                         <h5 className="text-sm font-semibold text-gray-700 mb-2 flex items-center">
                           <span className="mr-2">🗣️</span> Communication
                         </h5>
-                        <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-2">
-                          <li>Actively participated in SCRUM rituals.</li>
-                          <li>Gathered information and intelligence across various departments.</li>
+                        <ul className="list-disc list-outside text-sm text-gray-700 space-y-1 ml-6">
+                          <li className="pl-1">Actively participated in SCRUM rituals.</li>
+                          <li className="pl-1">Gathered information and intelligence across various departments.</li>
                         </ul>
                       </div>
                     </div>
@@ -757,10 +759,10 @@ export default function Home() {
               <p className="text-gray-700 mb-2">
                 Bachelor's Degree – Global Economy (5-year program)
               </p>
-              <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                <li>3rd place in project pitch competition in English. Showcased analysis, research, and communication.</li>
-                <li>Analyzed, gathered information and pitched to CEO of Geely Belarus a market fit solution.</li>
-                <li>Competed in Google competition. Found client, built site, used AdWords. Ranked top 100 of 5000.</li>
+              <ul className="list-disc list-outside text-gray-700 space-y-2 ml-8 mt-3">
+                <li className="pl-1">3rd place in project pitch competition in English. Showcased analysis, research, and communication.</li>
+                <li className="pl-1">Analyzed, gathered information and pitched to CEO of Geely Belarus a market fit solution.</li>
+                <li className="pl-1">Competed in Google competition. Found client, built site, used AdWords. Ranked top 100 of 5000.</li>
               </ul>
             </div>
           </div>
