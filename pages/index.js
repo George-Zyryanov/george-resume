@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaChevronDown, FaChevronUp, FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('summary');
@@ -93,21 +93,24 @@ export default function Home() {
             <p className="text-lg md:text-xl text-secondary mb-3">Senior AQA / QA Engineer</p>
             
             <div className="flex flex-wrap justify-center md:justify-start items-center text-sm md:text-base gap-y-2">
-              <a href="mailto:george.zyryanov@gmail.com" className="text-accent hover:underline">
+              <a href="mailto:george.zyryanov@gmail.com" className="text-accent hover:underline inline-flex items-center">
                 george.zyryanov@gmail.com
+                <FaExternalLinkAlt className="ml-1 text-xs" />
               </a>
               <span className="mx-2 md:mx-4 text-gray-400 hidden md:inline">|</span>
               <span className="w-full md:w-auto md:hidden"></span>
-              <a href="https://www.linkedin.com/in/george-zyryanov/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+              <a href="https://www.linkedin.com/in/george-zyryanov/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline inline-flex items-center">
                 linkedin
+                <FaExternalLinkAlt className="ml-1 text-xs" />
               </a>
               <span className="mx-2 md:mx-4 text-gray-400 hidden md:inline">|</span>
               <span className="w-full md:w-auto md:hidden"></span>
               <span className="text-gray-700">Poland, Warsaw</span>
               <span className="mx-2 md:mx-4 text-gray-400 hidden md:inline">|</span>
               <span className="w-full md:w-auto md:hidden"></span>
-              <a href="tel:+48571065204" className="text-accent hover:underline">
+              <a href="tel:+48571065204" className="text-accent hover:underline inline-flex items-center">
                 +48 571 065 204
+                <FaExternalLinkAlt className="ml-1 text-xs" />
               </a>
             </div>
           </div>
@@ -115,12 +118,9 @@ export default function Home() {
 
         {/* Executive Summary */}
         <section id="summary" className="mb-10 md:mb-16 scroll-mt-20">
-          <h2 className="text-xl md:text-2xl font-bold text-primary mb-4 md:mb-6 pb-2 border-b border-gray-200">Executive Summary</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-primary mb-4 md:mb-6 pb-2 border-b border-gray-200">Hi! I'm George</h2>
           <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-            I'm a Senior QA/AQA professional with 6 years of experience leading global teams and streamlining development processes through
-            robust manual and automated testing strategies. Achieved a 25% reduction in time-to-market by creating and optimizing over 500 
-            containerized automated tests, integrating CI/CD pipelines, and championing best practices across cross-functional teams. 
-            Leveraging strong communication skills and a collaborative leadership style.
+          Focused on delivering exceptional product quality. I streamline QA/AQA processes with robust automation and CI/CD integrations, ensuring faster and more reliable releases. My 6 years of experience, strong communication, and collaborative style drive best practices across diverse teams.
           </p>
         </section>
 
@@ -137,8 +137,9 @@ export default function Home() {
                   <div>
                     <h3 className="text-lg md:text-xl font-semibold text-primary">Engineering Manager AQA / QA</h3>
                     <div className="mt-1 text-sm">
-                      <a href="https://orca.security" target="_blank" rel="noopener noreferrer" className="font-bold text-secondary hover:text-accent">
+                      <a href="https://orca.security" target="_blank" rel="noopener noreferrer" className="font-bold text-secondary hover:text-accent inline-flex items-center">
                         Orca Security
+                        <FaExternalLinkAlt className="ml-1 text-xs" />
                       </a>
                       <span className="text-xs text-gray-600 italic ml-2">
                         - Cloud cybersecurity firm (~500 employees, ~$2B valuation) with partners including AWS, Azure, and Google Cloud.
@@ -159,8 +160,9 @@ export default function Home() {
                   <div>
                     <h3 className="text-lg md:text-xl font-semibold text-primary">Senior AQA / Senior QA</h3>
                     <div className="mt-1 text-sm">
-                      <a href="https://orca.security" target="_blank" rel="noopener noreferrer" className="font-bold text-secondary hover:text-accent">
+                      <a href="https://orca.security" target="_blank" rel="noopener noreferrer" className="font-bold text-secondary hover:text-accent inline-flex items-center">
                         Orca Security
+                        <FaExternalLinkAlt className="ml-1 text-xs" />
                       </a>
                     </div>
                   </div>
@@ -396,8 +398,9 @@ export default function Home() {
                 <div>
                   <h3 className="text-lg md:text-xl font-semibold text-primary">AQA / QA</h3>
                   <div className="mt-1 text-sm">
-                    <a href="https://uk.rs-online.com/web" target="_blank" rel="noopener noreferrer" className="font-bold text-secondary hover:text-accent">
+                    <a href="https://uk.rs-online.com/web" target="_blank" rel="noopener noreferrer" className="font-bold text-secondary hover:text-accent inline-flex items-center">
                       RS Components
+                      <FaExternalLinkAlt className="ml-1 text-xs" />
                     </a>
                     <span className="text-xs text-gray-600 italic ml-2">
                       - Global distributor of electronic products, employs ~8,900 people and reported revenues of ~£2.94 billion in 2024.
@@ -536,8 +539,9 @@ export default function Home() {
                 <div>
                   <h3 className="text-lg md:text-xl font-semibold text-primary">Junior QA</h3>
                   <div className="mt-1 text-sm">
-                    <a href="https://www.workfusion.com" target="_blank" rel="noopener noreferrer" className="font-bold text-secondary hover:text-accent">
+                    <a href="https://www.workfusion.com" target="_blank" rel="noopener noreferrer" className="font-bold text-secondary hover:text-accent inline-flex items-center">
                       WorkFusion
+                      <FaExternalLinkAlt className="ml-1 text-xs" />
                     </a>
                     <span className="text-xs text-gray-600 italic ml-2">
                       - A leading provider of automation solutions, specializing in robotic process automation (RPA) and intelligent automation.
@@ -643,7 +647,10 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
                 <h3 className="text-xl font-semibold text-primary">Founder / Developer / Designer</h3>
                 <div className="flex items-center mt-2 md:mt-0">
-                  <a href="https://booksofceo.com/people" target="_blank" rel="noopener noreferrer" className="text-secondary font-medium hover:text-accent mr-2">booksofceo.com</a>
+                  <a href="https://booksofceo.com/people" target="_blank" rel="noopener noreferrer" className="text-secondary font-medium hover:text-accent mr-2 inline-flex items-center">
+                    booksofceo.com
+                    <FaExternalLinkAlt className="ml-1 text-xs" />
+                  </a>
                   <span className="text-sm text-gray-600 md:text-right whitespace-nowrap">Dec 2024 - Present</span>
                 </div>
               </div>
@@ -752,7 +759,10 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
                 <h3 className="text-xl font-semibold text-primary">Bachelor in Global Economy and Marketing</h3>
                 <div className="flex items-center mt-2 md:mt-0">
-                  <a href="https://bsu.by/en/rankings" target="_blank" rel="noopener noreferrer" className="text-secondary font-medium hover:text-accent mr-2">Belarusian State University</a>
+                  <a href="https://bsu.by/en/rankings" target="_blank" rel="noopener noreferrer" className="text-secondary font-medium hover:text-accent mr-2 inline-flex items-center">
+                    Belarusian State University
+                    <FaExternalLinkAlt className="ml-1 text-xs" />
+                  </a>
                   <span className="text-sm text-gray-600 md:text-right whitespace-nowrap">Sep 2012 - May 2017</span>
                 </div>
               </div>
@@ -795,7 +805,7 @@ export default function Home() {
 
       <footer className="bg-primary text-white py-8 w-full">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <p className="mb-2">© {new Date().getFullYear()} George Zyryanov. All rights reserved.</p>
+          <p className="mb-2">© {new Date().getFullYear()} George Z. All rights reserved.</p>
           <p className="text-gray-400 text-sm">
             Built with Next.js and Tailwind CSS
           </p>
