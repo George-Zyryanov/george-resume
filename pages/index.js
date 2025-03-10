@@ -28,6 +28,19 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <style>{`
+          @keyframes pulse-border {
+            0% {
+              box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4);
+            }
+            70% {
+              box-shadow: 0 0 0 6px rgba(99, 102, 241, 0);
+            }
+            100% {
+              box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+            }
+          }
+        `}</style>
       </Head>
 
       <header className="sticky top-0 z-10 bg-white shadow-sm w-full">
@@ -74,7 +87,17 @@ export default function Home() {
               </button>
             </li>
             <li>
-              <a href="https://on-path-books-s3.s3.eu-north-1.amazonaws.com/GZyryanov+Resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-accent border border-accent px-2 py-1 rounded transition-colors duration-300 transform hover:scale-105">
+              <a 
+                href="https://on-path-books-s3.s3.eu-north-1.amazonaws.com/GZyryanov+Resume.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-600 hover:text-accent border border-accent px-2 py-1 rounded transition-all duration-300 hover:scale-105 hover:shadow-lg hover:bg-accent hover:text-white active:scale-95 animate-pulse-border"
+                style={{
+                  animation: 'none',
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.animation = 'pulse-border 1.5s infinite'}
+                onMouseLeave={(e) => e.currentTarget.style.animation = 'none'}
+              >
                 Download PDF Resume
               </a>
             </li>
@@ -852,25 +875,82 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">Education</h2>
           
           <div className="space-y-8">
+            {/* University Education */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                <h3 className="text-xl font-semibold text-primary">Bachelor in Global Economy and Marketing</h3>
+                <h3 className="text-xl font-semibold text-primary">Bachelor in Global Economy</h3>
                 <div className="flex items-center mt-2 md:mt-0">
                   <a href="https://bsu.by/en/rankings" target="_blank" rel="noopener noreferrer" className="text-secondary font-medium hover:text-accent mr-2 inline-flex items-center">
                     Belarusian State University
                     <FaExternalLinkAlt className="ml-1 text-xs" />
                   </a>
-                  <span className="text-sm text-gray-600 md:text-right whitespace-nowrap">Sep 2012 - May 2017</span>
+                  <span className="text-sm text-gray-600 md:text-right whitespace-nowrap">Belarus, Minsk</span>
                 </div>
               </div>
-              <p className="text-gray-700 mb-2">
-                Bachelor's Degree – Global Economy (5-year program)
-              </p>
-              <ul className="list-disc list-outside text-gray-700 space-y-2 ml-8 mt-3">
-                <li className="pl-1">3rd place in project pitch competition in English. Showcased analysis, research, and communication.</li>
-                <li className="pl-1">Analyzed, gathered information and pitched to CEO of Geely Belarus a market fit solution.</li>
-                <li className="pl-1">Participated in Google competition. Found client, built site, used AdWords. Ranked top 100 of 5000.</li>
-              </ul>
+            </div>
+
+            {/* Additional Professional Development */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Additional Professional Development</h3>
+              
+              <div className="space-y-6">
+                {/* Project Management Bootcamp */}
+                <div>
+                  <div className="flex flex-col md:flex-row md:justify-between md:items-start">
+                    <div className="flex items-center">
+                      <span className="font-medium text-gray-700">Project Management Bootcamp </span>
+                      <a href="https://lexfriedmanbooks-s3.s3.eu-north-1.amazonaws.com/PMTraining-COC_George-Zyryanov_4-5-2024.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline inline-flex items-center ml-1">
+                        (Certificate)
+                        <FaExternalLinkAlt className="ml-1 text-xs" />
+                      </a>
+                      <span className="mx-2">–</span>
+                      <a href="https://www.pmtraining.com/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline inline-flex items-center">
+                        PM Training
+                        <FaExternalLinkAlt className="ml-1 text-xs" />
+                      </a>
+                    </div>
+                    <span className="text-sm text-gray-600">2024</span>
+                  </div>
+                </div>
+
+                {/* Web Application Development */}
+                <div>
+                  <div className="flex flex-col md:flex-row md:justify-between md:items-start">
+                    <div className="flex items-center">
+                      <span className="font-medium text-gray-700">Web Application Development with JavaScript </span>
+                      <a href="https://www.linkedin.com/in/george-zyryanov/details/education/1635466600425/single-media-viewer/?profileId=ACoAABr6MG4B1dRi2X3TTDxh5cIXK62r0k1-ZXk" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline inline-flex items-center ml-1">
+                        (Certificate)
+                        <FaExternalLinkAlt className="ml-1 text-xs" />
+                      </a>
+                      <span className="mx-2">–</span>
+                      <a href="https://www.it-academy.by/course/front-end-developer/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline inline-flex items-center">
+                        IT Academy
+                        <FaExternalLinkAlt className="ml-1 text-xs" />
+                      </a>
+                    </div>
+                    <span className="text-sm text-gray-600">2021</span>
+                  </div>
+                </div>
+
+                {/* Java Developer */}
+                <div>
+                  <div className="flex flex-col md:flex-row md:justify-between md:items-start">
+                    <div className="flex items-center">
+                      <span className="font-medium text-gray-700">Java Developer </span>
+                      <a href="https://media.licdn.com/dms/image/v2/C4D2DAQHKr9i5L-jHZA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1602165741799?e=1741960800&v=beta&t=J9plHu0I9wiJyIhL6EDwvBUCwZz1r5sKF6k9cgfjqro" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline inline-flex items-center ml-1">
+                        (Certificate)
+                        <FaExternalLinkAlt className="ml-1 text-xs" />
+                      </a>
+                      <span className="mx-2">–</span>
+                      <a href="https://www.it-academy.by/course/java-developer/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline inline-flex items-center">
+                        IT Academy
+                        <FaExternalLinkAlt className="ml-1 text-xs" />
+                      </a>
+                    </div>
+                    <span className="text-sm text-gray-600">2017</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
