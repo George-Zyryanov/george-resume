@@ -73,6 +73,11 @@ export default function Home() {
                 Languages
               </button>
             </li>
+            <li>
+              <a href="https://on-path-books-s3.s3.eu-north-1.amazonaws.com/GZyryanov+Resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-accent border border-accent px-2 py-1 rounded transition-colors duration-300 transform hover:scale-105">
+                Download PDF Resume
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
