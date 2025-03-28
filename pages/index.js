@@ -894,6 +894,27 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-primary mb-4">Additional Professional Development</h3>
               
               <div className="space-y-6">
+
+
+                {/* Playwright with Python */}
+                <div>
+                  <div className="flex flex-col md:flex-row md:justify-between md:items-start">
+                    <div className="flex items-center">
+                      <span className="font-medium text-gray-700">Playwright Python and Pytest for Web Automation Testing</span>
+                      <a href="https://coursera.org/share/7d7c61b7bb5b4b46f1cb25e42ba341f9" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline inline-flex items-center ml-1">
+                        (Certificate)
+                        <FaExternalLinkAlt className="ml-1 text-xs" />
+                      </a>
+                      <span className="mx-2">–</span>
+                      <a href="https://www.coursera.org/learn/packt-playwright-python-and-pytest-for-web-automation-testing-la7nu" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline inline-flex items-center">
+                        Coursera
+                        <FaExternalLinkAlt className="ml-1 text-xs" />
+                      </a>
+                    </div>
+                    <span className="text-sm text-gray-600">2025</span>
+                  </div>
+                </div>
+
                 {/* Project Management Bootcamp */}
                 <div>
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start">
@@ -929,25 +950,6 @@ export default function Home() {
                       </a>
                     </div>
                     <span className="text-sm text-gray-600">2021</span>
-                  </div>
-                </div>
-
-                {/* Java Developer */}
-                <div>
-                  <div className="flex flex-col md:flex-row md:justify-between md:items-start">
-                    <div className="flex items-center">
-                      <span className="font-medium text-gray-700">Java Developer </span>
-                      <a href="https://media.licdn.com/dms/image/v2/C4D2DAQHKr9i5L-jHZA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1602165741799?e=1741960800&v=beta&t=J9plHu0I9wiJyIhL6EDwvBUCwZz1r5sKF6k9cgfjqro" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline inline-flex items-center ml-1">
-                        (Certificate)
-                        <FaExternalLinkAlt className="ml-1 text-xs" />
-                      </a>
-                      <span className="mx-2">–</span>
-                      <a href="https://www.it-academy.by/course/java-developer/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline inline-flex items-center">
-                        IT Academy
-                        <FaExternalLinkAlt className="ml-1 text-xs" />
-                      </a>
-                    </div>
-                    <span className="text-sm text-gray-600">2017</span>
                   </div>
                 </div>
               </div>
