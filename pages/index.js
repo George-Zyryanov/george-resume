@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
-import { FaChevronDown, FaChevronUp, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaChevronDown, FaChevronUp, FaExternalLinkAlt, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('summary');
@@ -107,39 +107,42 @@ export default function Home() {
 
       <main className="max-w-5xl w-full mx-auto px-4 md:px-6 py-6 md:py-8 bg-white shadow-md my-4 md:my-8">
         {/* Profile Section */}
-        <section className="mb-12 flex flex-col md:flex-row items-center md:items-start gap-6">
-          <div className="w-36 h-36 md:w-48 md:h-48 relative rounded-full overflow-hidden border-4 border-white shadow-lg profile-photo-animation">
+        <section className="mb-12 flex flex-col md:flex-row items-center md:items-start gap-8">
+          {/* Photo Container */}
+          <div className="w-36 h-36 md:w-40 md:h-40 flex-shrink-0 rounded-full overflow-hidden border-4 border-white shadow-lg">
             <img
               src="https://media.licdn.com/dms/image/v2/D4D03AQGERWXsh1We8g/profile-displayphoto-shrink_400_400/B4DZNoE.ahHgAg-/0/1732617955450?e=1746662400&v=beta&t=ppSlrWsZPoP4T1iTTtdEkO0b6AedRJvZQ7ND1hdEWc8"
-              alt="Profile Photo"
+              alt="George Zyryanov"
               className="w-full h-full object-cover"
             />
           </div>
           
-          <div className="text-center md:text-left">
-            <h1 className="text-2xl md:text-4xl font-bold text-primary mb-2">George Zyryanov</h1>
-            <p className="text-lg md:text-xl text-secondary mb-3">Senior AQA / QA Engineer</p>
+          {/* Text Content Container - Strictly Aligned */}
+          <div className="w-full text-center md:text-left md:pt-2">
+            {/* Name */}
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">George Zyryanov</h1>
             
-            <div className="flex flex-wrap justify-center md:justify-start items-center text-sm md:text-base gap-y-2">
-              <a href="mailto:george.zyryanov@gmail.com" className="text-accent hover:underline inline-flex items-center">
-                george.zyryanov@gmail.com
-                <FaExternalLinkAlt className="ml-1 text-xs" />
+            {/* Title */}
+            <h2 className="text-xl text-gray-600 mb-4">Senior AQA / QA Engineer</h2>
+            
+            {/* Contact Info - All aligned on same edge */}
+            <div className="flex flex-row items-center justify-center md:justify-start space-x-4">
+              <a 
+                href="https://www.linkedin.com/in/george-zyryanov/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center text-accent hover:text-accent-dark"
+              >
+                <FaLinkedin size={18} className="mr-2" />
+                <span>LinkedIn</span>
               </a>
-              <span className="mx-2 md:mx-4 text-gray-400 hidden md:inline">|</span>
-              <span className="w-full md:w-auto md:hidden"></span>
-              <a href="https://www.linkedin.com/in/george-zyryanov/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline inline-flex items-center">
-                linkedin
-                <FaExternalLinkAlt className="ml-1 text-xs" />
-              </a>
-              <span className="mx-2 md:mx-4 text-gray-400 hidden md:inline">|</span>
-              <span className="w-full md:w-auto md:hidden"></span>
-              <span className="text-gray-700">Poland, Warsaw</span>
-              <span className="mx-2 md:mx-4 text-gray-400 hidden md:inline">|</span>
-              <span className="w-full md:w-auto md:hidden"></span>
-              <a href="tel:+48571065204" className="text-accent hover:underline inline-flex items-center">
-                +48 571 065 204
-                <FaExternalLinkAlt className="ml-1 text-xs" />
-              </a>
+              
+              <span className="text-gray-300">|</span>
+              
+              <div className="flex items-center text-gray-600">
+                <FaMapMarkerAlt size={18} className="mr-2" />
+                <span>Poland, Warsaw</span>
+              </div>
             </div>
           </div>
         </section>
