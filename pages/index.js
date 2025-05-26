@@ -200,6 +200,113 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">FUNCTIONAL EXPERTISE DEMONSTRATED</h2>
           
           <div className="space-y-12">
+            {/* Pace Forwarding */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+                <div>
+                  <h3 className="text-lg md:text-xl font-semibold text-primary">AQA – QA / Software Engineer</h3>
+                  <div className="mt-1 text-sm">
+                    <a href="#" target="_blank" rel="noopener noreferrer" className="font-bold text-secondary hover:text-accent inline-flex items-center">
+                      Pace Forwarding
+                      <FaExternalLinkAlt className="ml-1 text-xs" />
+                    </a>
+                  </div>
+                </div>
+                <span className="text-sm text-gray-600 mt-2 md:mt-0 md:text-right whitespace-nowrap">June 2024 - Feb 2025</span>
+              </div>
+              <ul className="list-none list-outside text-gray-700 space-y-2 ml-8 mt-3">
+                <li className="pl-1 flex">
+                  <span className="text-gray-900 mr-2 flex-shrink-0">●</span>
+                  <div>
+                    <span className="font-bold">Full-Stack Development:</span> Built a Next.js/TypeScript web app with a MySQL backend on AWS (RDS, S3, Amplify), managing everything from schema design to deployment. Developed Playwright E2E and API auto tests.
+                  </div>
+                </li>
+                <li className="pl-1 flex">
+                  <span className="text-gray-900 mr-2 flex-shrink-0">●</span>
+                  <div>
+                    <span className="font-bold">API Integration & DevOps:</span> Integrated APIs to pull in external data feeds for logistics management. Set up CI/CD with GitHub and AWS Amplify for one-click deployments, and handled all server configuration myself.
+                  </div>
+                </li>
+                <li className="pl-1 flex">
+                  <span className="text-gray-900 mr-2 flex-shrink-0">●</span>
+                  <div>
+                    <span className="font-bold">Quality Assurance:</span> Ran manual and Postman-based API tests on Chrome each iteration, catching and fixing UI/UX edge cases.
+                  </div>
+                </li>
+              </ul>
+
+              <div className="mt-4 flex justify-center">
+                <button 
+                  onClick={() => setShowPaceTech(!showPaceTech)}
+                  className="flex items-center text-sm font-medium text-accent hover:text-accent-dark focus:outline-none transition-colors"
+                >
+                  <span>Technologies Used</span>
+                  {showPaceTech ? <FaChevronUp className="ml-2" /> : <FaChevronDown className="ml-2" />}
+                </button>
+              </div>
+              
+              {showPaceTech && (
+                <div className="mt-3 p-4 bg-gray-50 rounded-md border border-gray-200 animate-fadeIn">
+                  <div className="mb-3">
+                    <h4 className="text-sm font-semibold text-gray-700 mb-2">Frontend & Development</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                        <i className="devicon-nextjs-original mr-1"></i> Next.js
+                      </span>
+                      <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                        <i className="devicon-typescript-plain mr-1"></i> TypeScript
+                      </span>
+                      <span className="inline-flex items-center px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">
+                        <i className="devicon-playwright-plain mr-1"></i> Playwright
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <div className="mb-3">
+                    <h4 className="text-sm font-semibold text-gray-700 mb-2">Cloud & Infrastructure</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="inline-flex items-center px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs">
+                        <i className="devicon-amazonwebservices-original mr-1"></i> AWS
+                      </span>
+                      <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                        <span className="mr-1">🔧</span> RDS
+                      </span>
+                      <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                        <span className="mr-1">🔧</span> S3
+                      </span>
+                      <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                        <span className="mr-1">🔧</span> Amplify
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <div className="mb-3">
+                    <h4 className="text-sm font-semibold text-gray-700 mb-2">Database & APIs</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                        <i className="devicon-mysql-plain mr-1"></i> MySQL
+                      </span>
+                      <span className="inline-flex items-center px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs">
+                        <span className="mr-1">🔧</span> Logistics API
+                      </span>
+                      <span className="inline-flex items-center px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs">
+                        <span className="mr-1">🔧</span> Postman
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-sm font-semibold text-gray-700 mb-2">Version Control & CI/CD</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="inline-flex items-center px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-xs">
+                        <i className="devicon-github-original mr-1"></i> Git/GitHub
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
             {/* Orca Security - Both positions */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               {/* Manager position */}
@@ -487,113 +594,6 @@ export default function Home() {
                         <li className="pl-1">Developed QA/AQA responsibilities documents.</li>
                         <li className="pl-1">Maintained "how-to" documentation for new features to ensure continuity of work.</li>
                       </ul>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* Pace Forwarding */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
-                <div>
-                  <h3 className="text-lg md:text-xl font-semibold text-primary">AQA – QA / Software Engineer</h3>
-                  <div className="mt-1 text-sm">
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="font-bold text-secondary hover:text-accent inline-flex items-center">
-                      Pace Forwarding
-                      <FaExternalLinkAlt className="ml-1 text-xs" />
-                    </a>
-                  </div>
-                </div>
-                <span className="text-sm text-gray-600 mt-2 md:mt-0 md:text-right whitespace-nowrap">June 2024 - Feb 2025</span>
-              </div>
-              <ul className="list-none list-outside text-gray-700 space-y-2 ml-8 mt-3">
-                <li className="pl-1 flex">
-                  <span className="text-gray-900 mr-2 flex-shrink-0">●</span>
-                  <div>
-                    <span className="font-bold">Full-Stack Development:</span> Built a Next.js/TypeScript web app with a MySQL backend on AWS (RDS, S3, Amplify), managing everything from schema design to deployment. Developed Playwright E2E and API auto tests.
-                  </div>
-                </li>
-                <li className="pl-1 flex">
-                  <span className="text-gray-900 mr-2 flex-shrink-0">●</span>
-                  <div>
-                    <span className="font-bold">API Integration & DevOps:</span> Integrated APIs to pull in external data feeds for logistics management. Set up CI/CD with GitHub and AWS Amplify for one-click deployments, and handled all server configuration myself.
-                  </div>
-                </li>
-                <li className="pl-1 flex">
-                  <span className="text-gray-900 mr-2 flex-shrink-0">●</span>
-                  <div>
-                    <span className="font-bold">Quality Assurance:</span> Ran manual and Postman-based API tests on Chrome each iteration, catching and fixing UI/UX edge cases.
-                  </div>
-                </li>
-              </ul>
-
-              <div className="mt-4 flex justify-center">
-                <button 
-                  onClick={() => setShowPaceTech(!showPaceTech)}
-                  className="flex items-center text-sm font-medium text-accent hover:text-accent-dark focus:outline-none transition-colors"
-                >
-                  <span>Technologies Used</span>
-                  {showPaceTech ? <FaChevronUp className="ml-2" /> : <FaChevronDown className="ml-2" />}
-                </button>
-              </div>
-              
-              {showPaceTech && (
-                <div className="mt-3 p-4 bg-gray-50 rounded-md border border-gray-200 animate-fadeIn">
-                  <div className="mb-3">
-                    <h4 className="text-sm font-semibold text-gray-700 mb-2">Frontend & Development</h4>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                        <i className="devicon-nextjs-original mr-1"></i> Next.js
-                      </span>
-                      <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                        <i className="devicon-typescript-plain mr-1"></i> TypeScript
-                      </span>
-                      <span className="inline-flex items-center px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">
-                        <i className="devicon-playwright-plain mr-1"></i> Playwright
-                      </span>
-                    </div>
-                  </div>
-                  
-                  <div className="mb-3">
-                    <h4 className="text-sm font-semibold text-gray-700 mb-2">Cloud & Infrastructure</h4>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="inline-flex items-center px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs">
-                        <i className="devicon-amazonwebservices-original mr-1"></i> AWS
-                      </span>
-                      <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                        <span className="mr-1">🔧</span> RDS
-                      </span>
-                      <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                        <span className="mr-1">🔧</span> S3
-                      </span>
-                      <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                        <span className="mr-1">🔧</span> Amplify
-                      </span>
-                    </div>
-                  </div>
-                  
-                  <div className="mb-3">
-                    <h4 className="text-sm font-semibold text-gray-700 mb-2">Database & APIs</h4>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                        <i className="devicon-mysql-plain mr-1"></i> MySQL
-                      </span>
-                      <span className="inline-flex items-center px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs">
-                        <span className="mr-1">🔧</span> Logistics API
-                      </span>
-                      <span className="inline-flex items-center px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs">
-                        <span className="mr-1">🔧</span> Postman
-                      </span>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <h4 className="text-sm font-semibold text-gray-700 mb-2">Version Control & CI/CD</h4>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="inline-flex items-center px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-xs">
-                        <i className="devicon-github-original mr-1"></i> Git/GitHub
-                      </span>
                     </div>
                   </div>
                 </div>
