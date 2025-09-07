@@ -112,7 +112,7 @@ export default function Home() {
           {/* Photo Container */}
           <div className="w-36 h-36 md:w-40 md:h-40 flex-shrink-0 rounded-full overflow-hidden border-4 border-white shadow-lg">
             <img
-              src="https://media.licdn.com/dms/image/v2/D4D03AQGERWXsh1We8g/profile-displayphoto-shrink_200_200/B4DZNoE.ahHgAY-/0/1732617955450?e=1752105600&v=beta&t=Nxs0tEyAeCA5rFG5AcDIo25xI48-FWtVdZtbYA3hc0s"
+              src="https://my-person-images.s3.eu-north-1.amazonaws.com/DSC_6313+copy.jpg"
               alt="George Zyryanov"
               className="w-full h-full object-cover"
             />
